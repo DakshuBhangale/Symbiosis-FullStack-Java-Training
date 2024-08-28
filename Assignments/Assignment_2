@@ -1,1 +1,45 @@
+// Swapping of two numbers using call by value method and without using third variable.
+
+import java.util.Scanner;
+
+public class Swap_Numbers {
+
+	  static int num1 ;
+	 static int num2;
+	 
+	public static void swapNum_method1(int num1, int num2) {
+		int temp = num1;
+		num1 = num2;
+		num2 = temp;
+		
+		System.out.println("After Swapping values is:"+"number1="+num1+","+"number2="+num2);
+	}
+	
+	public static void swapNum_method3() {
+		num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+        System.out.println("After Swapping values is:"+"number1="+num1+","+"number2="+num2);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+        
+	    Scanner sc = new Scanner(System.in);
+	    
+	    System.out.println("Enter first number:");
+	    num1 = sc.nextInt();
+	    
+	    System.out.println("Enter first number:");
+	    num2 = sc.nextInt();
+	    
+	    System.out.println("Before Swapping values is:"+"number1="+num1+","+"number2="+num2);
+	    
+	    swapNum_method1(num1,num2);
+	    swapNum_method3();
+	     
+	}
+
+}
 
