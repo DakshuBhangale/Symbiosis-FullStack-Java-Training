@@ -1,4 +1,4 @@
-// Swapping of two numbers using call by value method and without using third variable.
+// Swapping of two numbers using call by value method and without using third variable method.
 
 import java.util.Scanner;
 
