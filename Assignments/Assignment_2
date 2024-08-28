@@ -43,3 +43,46 @@ public class Swap_Numbers {
 
 }
 
+
+
+
+//swapping of two numbers using call by reference method.
+
+import java.util.Scanner;
+
+public class swapNum_method2 {
+	
+	int num1;
+	int num2 ;
+
+	public static void swapNum_method(swapNum_method2 swp) {
+		 
+		int temp = swp.num1;  
+		swp.num1 = swp.num2;  
+		swp.num2 = temp;  
+		
+		System.out.println("After Swapping values is:"+"number1="+swp.num1+","+"number2="+swp.num2);
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		swapNum_method2 swp = new swapNum_method2 ();
+		
+		Scanner sc = new Scanner(System.in);
+	    
+	    System.out.println("Enter first number:");
+	    swp.num1 = sc.nextInt();
+	    
+	    System.out.println("Enter first number:");
+	    swp.num2 = sc.nextInt();
+	    
+	    System.out.println("Before Swapping values is:"+"number1="+swp.num1+","+"number2="+swp.num2);
+	    
+	    swapNum_method(swp);
+	}
+
+}
+
+
