@@ -1,1 +1,93 @@
+ Q. 1  // accept the character and find out the it is character, digit or special character.
+
+import java.util.Scanner;
+
+public class findCharDigitSpecialchar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter any caracter : ");
+        char ch = sc.next().charAt(0);
+
+        if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+
+             System.out.println(ch + " is Alphabet.");
+
+        } else if(ch >= '0' && ch <= '9') {
+
+             System.out.println(ch + " is Digit.");
+
+        } else {
+
+             System.out.println(ch + " is Special Character.");
+        }
+    
+	}
+
+}
+
+
+
+
+
+Q. 2  // menu driven program for all basics mathematical calculations.
+
+import java.util.Scanner;
+
+public class menuDrivenMathOperation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         
+		 char operator;
+		 
+		 int num1, num2, result;
+		 
+         Scanner sc = new Scanner(System.in);
+         
+         System.out.println("Enter First number:");
+         num1 = sc.nextInt();
+         
+         System.out.println("Enter Second number :");
+         num2 = sc.nextInt();
+         
+         System.out.println("Choose an operator: +, -, *, / or %");
+         operator = sc.next().charAt(0);
+         
+         switch(operator) {
+         case '+':
+     	       result = num1 + num2;
+     	       System.out.println("Addition is :"+result);
+     	    break; 
+     	    
+         case '-':
+   	            result = num1 - num2;
+   	            System.out.println("Substraction is :"+result);
+   	       break; 
+         
+         case '*':
+   	            result = num1 * num2;
+   	            System.out.println("Multiplication is :"+result);
+   	       break; 
+   	       
+         case '/':
+   	            result = num1 / num2;
+   	            System.out.println("Division is :"+result);
+   	       break; 
+   	       
+         case '%':
+   	            result = num1 % num2;
+   	            System.out.println("Mod of numbers is :"+result);
+   	       break; 
+   	       
+   	     default: 
+   	    	    System.out.println("Invalid Operator.");
+   	       break;
+         }         
+	}
+
+}
 
