@@ -1,0 +1,36 @@
+//write a java program sum of all the 3 angles is equal to 180 or not.
+
+package codeshef_litcode;
+
+import java.util.Scanner;
+
+public class SumOfAngles {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int angle1, angle2, angle3;
+		int sum;
+		
+		Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the first angle:");
+        angle1 = sc.nextInt();
+
+        System.out.println("Enter the second angle:");
+        angle2 = sc.nextInt();
+
+        System.out.println("Enter the third angle:");
+        angle3 = sc.nextInt();
+
+        // Calculate the sum of the angles
+        sum = angle1 + angle2 + angle3;
+
+        // Check if the sum is equal to 180 degrees
+        if (sum == 180) {
+            System.out.println("The sum of the angles is 180 degrees.");
+        } else {
+            System.out.println("The sum of the angles is not 180 degrees.");
+        }
+	}
+
+}
