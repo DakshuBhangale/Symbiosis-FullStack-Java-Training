@@ -1,0 +1,34 @@
+package Collection;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class Person_Age {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Scanner sc = new Scanner(System.in);
+      
+      System.out.println("Enter your birth Year :");
+      int birthYear = sc.nextInt();
+      
+      System.out.println("Enter your birth Month :");
+      int birthMonth = sc.nextInt();
+      
+      System.out.println("Enter your birth Date :");
+      int birthDate = sc.nextInt();
+      
+      LocalDate today = LocalDate.now();
+       int currentYear = today.getYear();
+       int currentMonth = today.getMonthValue();
+       int currentDate = today.getDayOfMonth();
+       
+       int age = currentYear - birthYear;
+       
+       if(currentMonth < birthMonth || (currentMonth == birthMonth && currentDate < birthDate )) {
+    	   age--;
+       }
+       System.out.println("Your are "+age+" years old.");
+	}
+
+}
